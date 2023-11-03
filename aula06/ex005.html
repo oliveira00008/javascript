@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passo com Dom</title>
+    <style>
+        body{
+            background: rgb(0, 0, 0);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="tl">Iniciando estudo com Document objct model</h1>
+    <p>aqui va o resutado</p>
+    <p>A prendendo a usar o <strong> DOM</strong> em javascritip</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+            var p1 =window.document.getElementsByTagName('p')[0]
+            window.document.write( 'esta escrito assim : ' + p1.innerText)
+            /*var d =window.document.getElementById('msg')
+            d.style.background = 'green'
+            d.innerText = ('Estou aguardando')*/
+
+            var d = window.document.querySelector('div#msg')
+            d.style.color = 'blue'
+
+            var h1 = window.document.querySelector('h1.tl') 
+            h1.style.color = 'green'
+            h1.style.background = 'blue'
+            h1.innerText = (' Iniciando estudo com Document objct model : voces estar aprendendo javascripte preste a atençao')
+
+    </script>
+</body>
+</html>
