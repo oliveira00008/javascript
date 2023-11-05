@@ -9,7 +9,7 @@
             background: rgb(0, 0, 0);
             color: white;
             font-family: Arial, Helvetica, sans-serif;
-            
+
         }
     </style>
 </head>
@@ -19,18 +19,23 @@
     <p>A prendendo a usar o <strong> DOM</strong> em javascritip</p>
     <div id="msg">Clique em mim</div>
     <script>
+                /* por  nome*/
             var p1 =window.document.getElementsByTagName('p')[0]
             window.document.write( 'esta escrito assim : ' + p1.innerText)
+             /*---------------------------------------*/
+                /* por ID */
             /*var d =window.document.getElementById('msg')
             d.style.background = 'green'
             d.innerText = ('Estou aguardando')*/
-
+            /*----------------------------------------/*
+                /* por ID*/
             var d = window.document.querySelector('div#msg')
             d.style.color = 'blue'
-
+             /*----------------------------------------/*
+                /*classe*/
             var h1 = window.document.querySelector('h1.tl') 
-            h1.style.color = 'green'
-            h1.style.background = 'blue'
+            h1.style.color = 'black'
+            h1.style.background = 'green'
             h1.innerText = (' Iniciando estudo com Document objct model : voces estar aprendendo javascripte preste a atençao')
 
     </script>
