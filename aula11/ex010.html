@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <H1>Sistema de multas</H1>
+    Velocidade por hora <input type="number" name="vel" id="ivel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="rs">
+        Resultado
+    </div>
+    <script>//posso por em vez de getElementById eu por querySelector
+        function calcular () { 
+            var tv = window.document.getElementById('ivel')
+            var rs = window.document.getElementById('rs')
+            var ivel = Number(tv.value)
+            rs.innerHTML =  `Sua velocidade atual e de <strong> ${ivel} km/h </strong>`
+            if (ivel > 50){
+                rs.innerHTML += `<p> Voce esta <STRONG> MULTADO </STRONG> por excesso de velocidade </p>`
+            }
+            rs.innerHTML += `<p>Dirija sempre com cuidado e coloque cinto de segurança</p>`
+        }
+
+    </script>
+</body>
+</html>

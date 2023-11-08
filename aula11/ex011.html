@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual paiz voce Mora</title>
+</head>
+<body>
+    <h1>Em que paiz atualmente voce mora</h1>
+    <div id="paiz">Qual e o seu paiz?</div>
+    <input type="text" name="paiz" id="pais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="vf">Verificar</div>
+    <script>
+        function calcular(){
+        var brasil = window.document.getElementById('pais')
+        //var vf = window.document.getElementById('vf')
+        if(pais == brasil){
+           vf.innerHTML = 'voce e estrangeiro'
+        }else{
+            vf.innerHTML = 'voce e brasileiro'
+        }
+        }
+
+    </script>
+</body>
+</html>
