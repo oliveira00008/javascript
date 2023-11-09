@@ -6,22 +6,20 @@
     <title>Qual paiz voce Mora</title>
 </head>
 <body>
-    <h1>Em que paiz atualmente voce mora</h1>
-    <div id="paiz">Qual e o seu paiz?</div>
-    <input type="text" name="paiz" id="pais">
+    <h1>Em que pais atualmente voce mora</h1>
+    Qual e o seu pais <input type="text" name="pais" id="Brasil">
     <input type="button" value="Verificar" onclick="calcular()">
-    <div id="vf">Verificar</div>
-    <script>
-        function calcular(){
-        var brasil = window.document.getElementById('pais')
-        //var vf = window.document.getElementById('vf')
-        if(pais == brasil){
-           vf.innerHTML = 'voce e estrangeiro'
-        }else{
-            vf.innerHTML = 'voce e brasileiro'
+    <div id="res">Verificar</div>
+    <script> 
+    function calcular(){     
+        var pais = window.document.getElementById('Brasil');
+        var res = window.document.getElementById('res');
+    if (pais != Brasil) {
+           res.innerHTML = 'voce e etrangeiro';
+        }else {
+            res.innerHTML = 'voce e Brasileiro';
         }
-        }
-
+    }
     </script>
 </body>
 </html>
