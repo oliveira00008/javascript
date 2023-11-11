@@ -8,16 +8,16 @@
 <body>
     <h1>Em que pais atualmente voce mora</h1>
     Qual e o seu pais <input type="text" name="pais" id="Brasil">
-    <input type="button" value="Verificar" onclick="calcular()">
+    <input type="button" value="Verificar" onclick="calcular()" >
     <div id="res">Verificar</div>
     <script> 
-    function calcular(){     
-        var pais = window.document.getElementById('Brasil');
-        var res = window.document.getElementById('res');
-    if (pais != Brasil) {
-           res.innerHTML = 'voce e etrangeiro';
-        }else {
-            res.innerHTML = 'voce e Brasileiro';
+    function calcular () { 
+        var pais = window.document.getElementById('Brasil')
+        var res = window.document.getElementById('res')
+    if ( Brasil == pais ) {
+           res.innerHTML = 'voce e etrangeiro'
+    }else {
+            res.innerHTML = 'voce e Basileiro' 
         }
     }
     </script>
