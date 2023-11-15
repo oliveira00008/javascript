@@ -1,25 +1,32 @@
+html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qual paiz voce Mora</title>
+    <title>Qual país você mora</title>
 </head>
 <body>
-    <h1>Em que pais atualmente voce mora</h1>
-    Qual e o seu pais <input type="text" name="pais" id="Brasil">
-    <input type="button" value="Verificar" onclick="calcular()" >
-    <div id="res">Verificar</div>
-    <script> 
-    function calcular () { 
-        var pais = window.document.getElementById('Brasil')
-        var res = window.document.getElementById('res')
-    if ( Brasil == pais ) {
-           res.innerHTML = 'voce e etrangeiro'
-    }else {
-            res.innerHTML = 'voce e Basileiro' 
+    <h1>Em qual país você mora atualmente?</h1>
+    <label for="pais">Qual é o seu país:</label>
+    <input type="text" id="pais">
+    <button onclick="verificarPais()">Verificar</button>
+    <div id="res"></div>
+
+    <script>
+        function verificarPais() {
+            var paisInput = document.getElementById('pais');
+            var resDiv = document.getElementById('res');
+            var pais = paisInput.value.trim();
+
+            if (pais === 'pais') {
+                resDiv.textContent = 'Por favor, digite o nome do país.';
+            } else if (pais === 'Brasil') {
+                resDiv.textContent = 'Você é brasileiro!';
+            } else {
+                resDiv.textContent = 'Você é estrangeiro.';
+            }
         }
-    }
     </script>
 </body>
 </html>
